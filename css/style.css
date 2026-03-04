@@ -5,17 +5,18 @@
    Variables & Reset
    ========================================================================== */
 :root {
-    /* Colors - Navy & White Base, Bright Impression */
-    --color-primary: #0A2463;
-    /* Deep Navy */
-    --color-primary-light: #1E4088;
-    --color-secondary: #00B4D8;
-    /* Bright Blue/Cyan Accent for "Bright" feel */
-    --color-text-main: #333333;
+    /* Colors - Modern, Warm & earthy theme */
+    --color-primary: #3E3B39;
+    /* Dark warm gray */
+    --color-primary-light: #5A5654;
+    --color-secondary: #C08A63;
+    /* Accent: Warm terracotta/gold */
+    --color-text-main: #2D2D2D;
     --color-text-light: #666666;
-    --color-bg-body: #FFFFFF;
-    --color-bg-light: #F8FAFC;
-    /* Very light blue-gray for sections */
+    --color-bg-body: #FAFAF9;
+    /* Soft off-white */
+    --color-bg-light: #F4F3ED;
+    /* Very light beige for sections */
     --color-white: #FFFFFF;
 
     /* Spacing */
@@ -217,7 +218,7 @@ header {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, #F0F4FF 0%, #FFFFFF 100%);
+    background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-body) 100%);
     display: flex;
     align-items: center;
     position: relative;
@@ -409,8 +410,8 @@ header {
 }
 
 .footer {
-    background: #05163D;
-    /* Darker Navy */
+    background: #2D2D2D;
+    /* Darker Gray */
     color: rgba(255, 255, 255, 0.7);
     padding: var(--spacing-md) 0;
     text-align: center;
@@ -455,6 +456,20 @@ header {
         transform: none;
         margin: 0;
         font-size: 1rem;
+    }
+
+    .cost-grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        /* For scrollbar */
+    }
+
+    .cost-card {
+        min-width: 250px;
+        flex: 0 0 auto;
     }
 
     .nav-menu {
