@@ -430,12 +430,31 @@ header {
     }
 
     .concept-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr auto 1fr auto 1fr;
+        gap: 0.25rem;
+    }
+
+    .concept-item {
+        padding: 0.5rem;
+    }
+
+    .concept-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .concept-item h3 {
+        font-size: 0.75rem;
+    }
+
+    .concept-item p {
+        font-size: 0.6rem;
     }
 
     .concept-arrow {
-        transform: rotate(90deg);
-        margin: 1rem 0;
+        transform: none;
+        margin: 0;
+        font-size: 1rem;
     }
 
     .nav-menu {
