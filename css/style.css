@@ -456,11 +456,13 @@ header {
     }
 
     .concept-item h3 {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+        /* Reduced to prevent text wrapping */
+        margin-bottom: 0.2rem;
     }
 
     .concept-item p {
-        font-size: 0.6rem;
+        font-size: 0.55rem;
     }
 
     .concept-arrow {
@@ -498,10 +500,14 @@ header {
     }
 
     .service-card {
-        min-width: 80%;
-        /* Takes up 80% to peek the next card */
+        min-width: 75%;
+        /* Reduced to show more of the next card */
+        max-width: 280px;
+        /* Constrain max width */
         flex: 0 0 auto;
         scroll-snap-align: start;
+        white-space: normal;
+        /* Ensure text can wrap */
     }
 
     .nav-menu {
