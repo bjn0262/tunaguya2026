@@ -427,7 +427,13 @@ header {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        /* Reduced to fit mobile */
+        margin-bottom: 1rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
     }
 
     .concept-grid {
@@ -437,10 +443,15 @@ header {
 
     .concept-item {
         padding: 0.5rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 90px;
     }
 
     .concept-icon {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         margin-bottom: 0.25rem;
     }
 
@@ -459,17 +470,38 @@ header {
     }
 
     .cost-grid {
+        flex-direction: column;
+        /* Stacked layout on mobile */
+        align-items: center;
+        gap: 1.5rem;
+        padding-bottom: 0;
+        overflow-x: visible;
+    }
+
+    .cost-card {
+        min-width: unset;
+        width: 100%;
+        max-width: 320px;
+        flex: none;
+    }
+
+    .service-grid {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: auto;
         justify-content: flex-start;
-        padding-bottom: 1rem;
-        /* For scrollbar */
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+        /* Space for scrollbar */
+        scroll-snap-type: x mandatory;
     }
 
-    .cost-card {
-        min-width: 250px;
+    .service-card {
+        min-width: 80%;
+        /* Takes up 80% to peek the next card */
         flex: 0 0 auto;
+        scroll-snap-align: start;
     }
 
     .nav-menu {
