@@ -5,18 +5,21 @@
    Variables & Reset
    ========================================================================== */
 :root {
-    /* Colors - Modern, Warm & earthy theme */
-    --color-primary: #3E3B39;
-    /* Dark warm gray */
-    --color-primary-light: #5A5654;
-    --color-secondary: #C08A63;
-    /* Accent: Warm terracotta/gold */
-    --color-text-main: #2D2D2D;
-    --color-text-light: #666666;
-    --color-bg-body: #FAFAF9;
-    /* Soft off-white */
-    --color-bg-light: #F4F3ED;
-    /* Very light beige for sections */
+    /* Colors - Elegant & Trustworthy Navy theme */
+    --color-primary: #0F1E36;
+    /* Classic Deep Navy */
+    --color-primary-light: #1E304C;
+    /* Slightly lighter navy */
+    --color-secondary: #C5A880;
+    /* Elegant Champagne Gold */
+    --color-text-main: #142135;
+    /* Deep Navy Gray */
+    --color-text-light: #4A5B73;
+    /* Muted Navy Gray */
+    --color-bg-body: #F4F6F9;
+    /* Clean light blue-gray */
+    --color-bg-light: #E9EDF5;
+    /* Slightly darker light blue-gray for contrast sections */
     --color-white: #FFFFFF;
 
     /* Spacing */
@@ -194,31 +197,8 @@ header {
 /* ==========================================================================
    Hero Section
    ========================================================================== */
-.hero-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-md);
-}
-
-.hero-image-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    z-index: 2;
-}
-
-.hero-img {
-    max-width: 100%;
-    width: 500px;
-    border-radius: 20px 0 20px 0;
-    box-shadow: var(--shadow-lg);
-}
-
 .hero {
     height: 100vh;
-    background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-body) 100%);
     display: flex;
     align-items: center;
     position: relative;
@@ -226,16 +206,49 @@ header {
     overflow: hidden;
 }
 
-.hero-content {
-    max-width: 600px;
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(15, 30, 54, 0.85) 0%, rgba(30, 48, 76, 0.70) 100%);
     z-index: 2;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 700px;
+    color: #FFFFFF;
 }
 
 .hero-title {
     font-size: 3.5rem;
-    color: var(--color-primary);
+    color: #FFFFFF;
     margin-bottom: var(--spacing-md);
-    line-height: 1.2;
+    line-height: 1.25;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-title span {
@@ -243,9 +256,23 @@ header {
 }
 
 .hero-text {
-    font-size: 1.2rem;
-    color: var(--color-text-light);
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: var(--spacing-md);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+}
+
+/* Specific styling for the hero button to pop on the dark overlay */
+.hero-content .btn {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.hero-content .btn:hover {
+    background: #FFFFFF;
+    color: var(--color-primary);
 }
 
 .btn {
@@ -263,20 +290,6 @@ header {
     background: var(--color-primary-light);
     transform: translateY(-3px);
     box-shadow: var(--shadow-lg);
-}
-
-.hero-shape {
-    position: absolute;
-    top: 50%;
-    right: -10%;
-    transform: translateY(-50%);
-    width: 50vw;
-    height: 50vw;
-    background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
-    opacity: 0.1;
-    border-radius: 50%;
-    filter: blur(80px);
-    z-index: 1;
 }
 
 /* ==========================================================================
@@ -410,8 +423,8 @@ header {
 }
 
 .footer {
-    background: #2D2D2D;
-    /* Darker Gray */
+    background: #081222;
+    /* Darker Navy */
     color: rgba(255, 255, 255, 0.7);
     padding: var(--spacing-md) 0;
     text-align: center;
