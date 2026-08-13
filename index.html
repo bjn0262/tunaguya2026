@@ -4,200 +4,1188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>株式会社TUNAGUYA | 人と暮らしをつなぐ</title>
+
+    <title>株式会社TUNAGUYA | 人と暮らしを、信頼でつなぐ。</title>
+
+    <meta name="description"
+        content="TUNAGUYAは、美容室を起点に、お客様と地域の専門業者をつなぐ紹介プラットフォームです。美容室の導入費・月額費用は0円。">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="#" class="logo">TUNAGUYA</a>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#home" class="nav-link">ホーム</a></li>
-                    <li><a href="#about" class="nav-link">TUNAGUYAについて</a></li>
-                    <li><a href="#service" class="nav-link">事業内容</a></li>
-                    <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
-                </ul>
-                <div class="hamburger">
-                    <i class="fa-solid fa-bars"></i>
+    <!-- ==================================================
+         OPENING SCREEN
+    ================================================== -->
+
+    <div id="opening-screen" class="opening-screen">
+
+        <div class="opening-content">
+
+            <p class="opening-small">LOCAL NETWORK</p>
+
+            <div class="opening-logo">
+                TUNAGUYA
+            </div>
+
+            <div class="opening-stats">
+
+                <div class="opening-stat">
+                    <span class="opening-number" data-count="3">0</span>
+                    <span class="opening-label">SALONS</span>
                 </div>
-            </nav>
+
+                <div class="opening-divider"></div>
+
+                <div class="opening-stat">
+                    <span class="opening-number" data-count="10">0</span>
+                    <span class="opening-label">PARTNERS</span>
+                </div>
+
+            </div>
+
+            <p class="opening-message">
+                人と暮らしを、信頼でつなぐ。
+            </p>
+
         </div>
+
+    </div>
+
+
+    <!-- ==================================================
+         HEADER
+    ================================================== -->
+
+    <header class="header" id="header">
+
+        <div class="header-inner">
+
+            <a href="#home" class="logo">
+                TUNAGUYA
+            </a>
+
+            <nav class="desktop-nav">
+
+                <a href="#about">ABOUT</a>
+                <a href="#service">SERVICE</a>
+                <a href="#salon">FOR SALON</a>
+                <a href="#partner">FOR PARTNER</a>
+                <a href="#contact" class="nav-contact">
+                    CONTACT
+                </a>
+
+            </nav>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button class="menu-button" id="menu-button" aria-label="メニューを開く">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-nav" id="mobile-nav">
+
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#service">SERVICE</a>
+            <a href="#salon">FOR SALON</a>
+            <a href="#partner">FOR PARTNER</a>
+            <a href="#contact">CONTACT</a>
+
+        </div>
+
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg-image">
-            <img src="images/hero.jpg.png" alt="Lifestyle Background Image">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-container">
+
+    <!-- ==================================================
+         HERO
+    ================================================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <!-- Background Images -->
+
+            <div class="hero-slider">
+
+                <div class="hero-track">
+
+                    <div class="hero-slide">
+                        <img src="images/hero.jpg.png" alt="美容室でのコミュニケーション">
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="images/hero.jpg.png" alt="美容室とお客様">
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="images/hero.jpg.png" alt="家族と暮らし">
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="images/hero.jpg.png" alt="住まいと暮らし">
+                    </div>
+
+                    <div class="hero-slide">
+                        <img src="images/hero.jpg.png" alt="暮らしを支える専門家">
+                    </div>
+
+                    <!-- Loop -->
+
+                    <div class="hero-slide">
+                        <img src="images/hero.jpg.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-overlay"></div>
+
+
             <div class="hero-content">
-                <h1 class="hero-title">
-                    暮らしの安心を、<br>
-                    <span>信頼</span>でつなぐ。
+
+                <p class="hero-eyebrow">
+                    CONNECTING PEOPLE &amp; LIFESTYLE
+                </p>
+
+                <h1>
+                    いつもの美容室から、<br>
+                    <span>暮らしのプロへ。</span>
                 </h1>
-                <p class="hero-text">
-                    現在は<strong style="color: var(--color-secondary);">兵庫県</strong>を中心に展開中。<br>
-                    信頼できる<strong style="color: var(--color-secondary);">美容室からのご紹介</strong>を通じて、<br>
-                    暮らしを支える最適なプロフェッショナルをご案内します。
+
+                <p class="hero-description">
+                    美容室を起点に、<br class="sp-only">
+                    お客様と地域の専門業者をつなぐ。
                 </p>
-                <a href="#about" class="btn">もっと詳しく <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
 
-    <!-- About/Concept Section -->
-    <section id="about" class="bg-light">
-        <div class="container">
-            <span class="section-subtitle">CONCEPT</span>
-            <h2 class="section-title">TUNAGUYAの仕組み</h2>
+                <div class="hero-buttons">
 
-            <div class="concept-grid">
-                <div class="concept-item">
-                    <div class="concept-icon"><i class="fa-solid fa-scissors"></i></div>
-                    <h3>美容室・サロン</h3>
-                    <p>いつもの信頼できる美容室から<br>ご紹介スタート</p>
+                    <a href="#about" class="btn btn-light">
+                        TUNAGUYAについて
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+
+                    <a href="#salon" class="btn btn-outline">
+                        美容室の方へ
+                    </a>
+
                 </div>
 
-                <div class="concept-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-
-                <div class="concept-item">
-                    <div class="concept-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
-                    <h3>専用アプリ</h3>
-                    <p>アプリを通じて<br>手軽にライフサービスへ接続</p>
-                </div>
-
-                <div class="concept-arrow"><i class="fa-solid fa-chevron-right"></i></div>
-
-                <div class="concept-item">
-                    <div class="concept-icon"><i class="fa-solid fa-handshake"></i></div>
-                    <h3>各種専門業者</h3>
-                    <p>厳選された<br>生活サポートのプロたち</p>
-                </div>
             </div>
 
-            <!-- Cost Info Section -->
-            <div class="cost-info-container" style="margin-top: 4rem;">
-                <h3 style="text-align: center; color: var(--color-primary); margin-bottom: 2rem;">コストについて</h3>
-                <div class="cost-grid">
-                    <div class="cost-card">
-                        <h4>美容室様</h4>
-                        <div class="cost-price">
-                            <span>導入コスト</span>
-                            <span class="price-val">¥0</span>
-                        </div>
-                        <div class="cost-price">
-                            <span>ランニングコスト</span>
-                            <span class="price-val">¥0</span>
-                        </div>
-                        <p class="cost-note">リスクなく導入いただけます</p>
-                    </div>
-                    <div class="cost-card">
-                        <h4>提携業者様</h4>
-                        <div class="cost-price">
-                            <span>掲載費用</span>
-                            <span class="price-val">¥0</span>
-                        </div>
-                        <div class="cost-desc">
-                            完全成功報酬型で<br>紹介料を頂戴いたします
-                        </div>
-                    </div>
-                </div>
+
+            <div class="hero-scroll">
+
+                <span>SCROLL</span>
+
+                <div class="scroll-line"></div>
+
             </div>
 
-            <div style="text-align: center; margin-top: 3rem;">
-                <p style="font-size: 1.1rem; line-height: 2;">
-                    「どこに頼めばいいかわからない」という暮らしの悩みを、<br>
-                    身近で信頼できる<strong style="color: var(--color-secondary);">美容室からの直接のご紹介</strong>によって解決いたします。<br>
-                    現在は<strong style="color: var(--color-secondary);">兵庫県</strong>を中心としたエリアにてサービスを展開しております。
+        </section>
+
+
+        <!-- ==================================================
+             INTRO
+        ================================================== -->
+
+        <section class="intro section">
+
+            <div class="container">
+
+                <p class="section-eyebrow">
+                    WHY TUNAGUYA
                 </p>
+
+                <h2 class="large-heading">
+                    「どこに頼めば<br>
+                    いいんだろう？」
+                </h2>
+
+                <div class="intro-text">
+
+                    <p>
+                        エアコンを掃除したい。
+                        外構をきれいにしたい。
+                        家を建てたい。
+                    </p>
+
+                    <p>
+                        リフォームしたい。
+                        不動産について相談したい。
+                    </p>
+
+                    <p class="intro-emphasis">
+                        でも、<br>
+                        <strong>「どこに頼めばいいかわからない。」</strong>
+                    </p>
+
+                </div>
+
+                <div class="intro-conclusion">
+
+                    <span>TUNAGUYA</span>
+
+                    <p>
+                        そんな「困った」を、<br>
+                        身近なつながりから解決する。
+                    </p>
+
+                </div>
+
             </div>
-        </div>
-    </section>
 
-    <!-- Service Section -->
-    <section id="service">
-        <div class="container">
-            <span class="section-subtitle">SERVICE</span>
-            <h2 class="section-title">ご紹介可能なサービス</h2>
+        </section>
 
-            <div class="service-grid">
-                <div class="service-card">
-                    <i class="fa-solid fa-tree" style="font-size: 2rem; color: #ccc; margin-bottom: 1rem;"></i>
-                    <h3>外構・エクステリア</h3>
-                    <p>お庭のリフォーム、カーポート設置など、住まいの外観を美しく整えます。</p>
+
+        <!-- ==================================================
+             ABOUT
+        ================================================== -->
+
+        <section class="about section bg-cream" id="about">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-eyebrow">
+                        ABOUT TUNAGUYA
+                    </p>
+
+                    <h2 class="section-title">
+                        人と暮らしを、<br>
+                        信頼でつなぐ。
+                    </h2>
+
                 </div>
 
-                <div class="service-card">
-                    <i class="fa-solid fa-house" style="font-size: 2rem; color: #ccc; margin-bottom: 1rem;"></i>
-                    <h3>ハウスメーカー・工務店</h3>
-                    <p>新築、リフォームのご相談。信頼できる建築のプロをご紹介します。</p>
+
+                <div class="about-grid">
+
+                    <div class="about-copy">
+
+                        <p class="lead">
+                            TUNAGUYAは、美容室をはじめとする身近な店舗を起点に、
+                            お客様と地域の専門業者をつなぐ紹介プラットフォームです。
+                        </p>
+
+                        <p>
+                            普段から通っている美容室だからこそ生まれる、
+                            「ちょっと相談したい」という会話。
+                        </p>
+
+                        <p>
+                            TUNAGUYAは、その身近な「信頼」を、
+                            新しいサービスとの出会いへつなげます。
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-label">
+
+                        <span class="vertical-label">
+                            PEOPLE × LIFESTYLE
+                        </span>
+
+                    </div>
+
                 </div>
 
-                <div class="service-card">
-                    <i class="fa-solid fa-broom" style="font-size: 2rem; color: #ccc; margin-bottom: 1rem;"></i>
-                    <h3>ハウスクリーニング</h3>
-                    <p>エアコン、キッチン、浴室など、プロの技術で徹底的にきれいにします。</p>
-                </div>
-
-                <div class="service-card">
-                    <i class="fa-solid fa-building" style="font-size: 2rem; color: #ccc; margin-bottom: 1rem;"></i>
-                    <h3>不動産</h3>
-                    <p>お部屋探し、売買、管理など、不動産に関するあらゆるご相談に対応します。</p>
-                </div>
-
-                <div class="service-card">
-                    <i class="fa-solid fa-chart-line" style="font-size: 2rem; color: #ccc; margin-bottom: 1rem;"></i>
-                    <h3>資産運用</h3>
-                    <p>将来のための資金計画や投資について、専門家がアドバイスします。</p>
-                </div>
-
-                <div class="service-card">
-                    <i class="fa-solid fa-shield-heart" style="font-size: 2rem; color: #ccc; margin-bottom: 1rem;"></i>
-                    <h3>保険</h3>
-                    <p>ライフステージに合わせた最適な保険プランをご提案します。</p>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2 class="section-title" style="border-bottom: none;">お問い合わせ</h2>
-            <p style="margin-bottom: 2rem; font-size: 1.1rem;">
-                サービス導入をご検討の美容室様、提携をご希望の業者様は<br>
-                下記よりお気軽にお問い合わせください。
-            </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdT-fpFnk7RTql2mKQROUCeeWWMnV8B78nC57apgzr80JFv1Q/viewform"
-                target="_blank" rel="noopener noreferrer" class="btn"
-                style="background-color: #fff; color: var(--color-primary);">
-                お問い合わせフォームへ
-            </a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+
+        <!-- ==================================================
+             CONNECTION FLOW
+        ================================================== -->
+
+        <section class="connection section">
+
+            <div class="container">
+
+                <div class="section-header center">
+
+                    <p class="section-eyebrow">
+                        HOW IT WORKS
+                    </p>
+
+                    <h2 class="section-title">
+                        つながることで、<br>
+                        暮らしがもっと便利になる。
+                    </h2>
+
+                </div>
+
+
+                <div class="connection-flow">
+
+                    <div class="connection-item">
+
+                        <div class="connection-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <p class="connection-number">01</p>
+
+                        <h3>
+                            CUSTOMER
+                        </h3>
+
+                        <p>
+                            暮らしの中の<br>
+                            「困った」「相談したい」
+                        </p>
+
+                    </div>
+
+
+                    <div class="connection-line"></div>
+
+
+                    <div class="connection-item">
+
+                        <div class="connection-icon">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+
+                        <p class="connection-number">02</p>
+
+                        <h3>
+                            SALON
+                        </h3>
+
+                        <p>
+                            身近で信頼できる<br>
+                            美容室からご相談
+                        </p>
+
+                    </div>
+
+
+                    <div class="connection-line"></div>
+
+
+                    <div class="connection-item">
+
+                        <div class="connection-icon">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+
+                        <p class="connection-number">03</p>
+
+                        <h3>
+                            TUNAGUYA
+                        </h3>
+
+                        <p>
+                            お客様と専門業者を<br>
+                            つなぐ
+                        </p>
+
+                    </div>
+
+
+                    <div class="connection-line"></div>
+
+
+                    <div class="connection-item">
+
+                        <div class="connection-icon">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+
+                        <p class="connection-number">04</p>
+
+                        <h3>
+                            PARTNER
+                        </h3>
+
+                        <p>
+                            地域の専門家が<br>
+                            お客様をサポート
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             NETWORK
+        ================================================== -->
+
+        <section class="network section bg-dark">
+
+            <div class="container">
+
+                <div class="section-header center light">
+
+                    <p class="section-eyebrow">
+                        TUNAGUYA NETWORK
+                    </p>
+
+                    <h2 class="section-title">
+                        兵庫県から、<br>
+                        少しずつつながりを広げています。
+                    </h2>
+
+                </div>
+
+
+                <div class="network-stats">
+
+                    <div class="network-stat">
+
+                        <span class="network-number" data-count="3">
+                            0
+                        </span>
+
+                        <span class="network-label">
+                            導入美容室
+                        </span>
+
+                        <span class="network-en">
+                            SALONS
+                        </span>
+
+                    </div>
+
+
+                    <div class="network-stat-divider"></div>
+
+
+                    <div class="network-stat">
+
+                        <span class="network-number" data-count="10">
+                            0
+                        </span>
+
+                        <span class="network-label">
+                            提携企業
+                        </span>
+
+                        <span class="network-en">
+                            PARTNERS
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <p class="network-note">
+                    ※2026年現在
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FEATURES
+        ================================================== -->
+
+        <section class="features section">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <p class="section-eyebrow">
+                        OUR FEATURES
+                    </p>
+
+                    <h2 class="section-title">
+                        TUNAGUYAが<br>
+                        大切にしていること。
+                    </h2>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            01
+                        </span>
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+
+                        <h3>
+                            身近な「信頼」を起点に
+                        </h3>
+
+                        <p>
+                            普段から通う美容室を通じて、
+                            新しいサービスとの出会いをつくります。
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            02
+                        </span>
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <h3>
+                            地域の専門家とつながる
+                        </h3>
+
+                        <p>
+                            地域に根ざした企業・専門業者との
+                            ネットワークを構築しています。
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card highlight">
+
+                        <span class="feature-number">
+                            03
+                        </span>
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-yen-sign"></i>
+                        </div>
+
+                        <h3>
+                            美容室は導入無料
+                        </h3>
+
+                        <p>
+                            導入費用・月額費用は0円。
+                            新しいサービスとして気軽に導入できます。
+                        </p>
+
+                        <div class="feature-price">
+                            ¥0
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <span class="feature-number">
+                            04
+                        </span>
+
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <h3>
+                            必要なときだけ、必要なサービスを
+                        </h3>
+
+                        <p>
+                            お客様の相談に合わせて専門業者をご紹介。
+                            必要な人とサービスをつなぎます。
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             SERVICE
+        ================================================== -->
+
+        <section class="service section bg-cream" id="service">
+
+            <div class="container">
+
+                <div class="section-header center">
+
+                    <p class="section-eyebrow">
+                        SERVICE
+                    </p>
+
+                    <h2 class="section-title">
+                        暮らしを支える、<br>
+                        さまざまなサービス。
+                    </h2>
+
+                    <p class="section-lead">
+                        TUNAGUYAでは、暮らしに関わるさまざまな分野の
+                        専門家とのネットワークを広げています。
+                    </p>
+
+                </div>
+
+
+                <div class="service-grid">
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-tree"></i>
+                        </div>
+
+                        <span>01</span>
+
+                        <h3>
+                            外構・エクステリア
+                        </h3>
+
+                        <p>
+                            お庭、カーポート、フェンスなど、
+                            住まいの外まわりをサポート。
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+
+                        <span>02</span>
+
+                        <h3>
+                            ハウスメーカー・工務店
+                        </h3>
+
+                        <p>
+                            新築・建築・住まいに関する
+                            ご相談をサポート。
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+
+                        <span>03</span>
+
+                        <h3>
+                            ハウスクリーニング
+                        </h3>
+
+                        <p>
+                            エアコン、キッチン、浴室など、
+                            暮らしをプロの技術できれいに。
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <span>04</span>
+
+                        <h3>
+                            不動産
+                        </h3>
+
+                        <p>
+                            お部屋探し、売買など、
+                            不動産に関するご相談をサポート。
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+
+                        <span>05</span>
+
+                        <h3>
+                            リフォーム
+                        </h3>
+
+                        <p>
+                            住まいのリフォームや
+                            修繕に関するご相談をサポート。
+                        </p>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <div class="service-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+
+                        <span>06</span>
+
+                        <h3>
+                            その他のライフサービス
+                        </h3>
+
+                        <p>
+                            地域の暮らしを支えるサービスを
+                            今後も順次拡大していきます。
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FOR SALON
+        ================================================== -->
+
+        <section class="audience-section salon-section" id="salon">
+
+            <div class="audience-image">
+
+                <img
+                    src="images/hero.jpg.png"
+                    alt="美容室でお客様と会話する美容師">
+
+            </div>
+
+
+            <div class="audience-content">
+
+                <p class="section-eyebrow">
+                    FOR SALON
+                </p>
+
+                <h2>
+                    美容室の<br>
+                    「新しいサービス」として。
+                </h2>
+
+                <p class="audience-lead">
+                    お客様との会話から生まれる、
+                    「○○ってどこに頼めばいい？」
+                    という相談に応えられる美容室へ。
+                </p>
+
+                <p>
+                    「外構業者って知ってる？」<br>
+                    「エアコン掃除、どこに頼めばいい？」<br>
+                    「家を建てたいんだけど……」
+                </p>
+
+                <p>
+                    そんなとき、
+                    <strong>「TUNAGUYAで紹介できますよ。」</strong>
+                    と言える美容室へ。
+                </p>
+
+
+                <div class="price-box">
+
+                    <div>
+                        <span>導入費</span>
+                        <strong>¥0</strong>
+                    </div>
+
+                    <div>
+                        <span>月額費</span>
+                        <strong>¥0</strong>
+                    </div>
+
+                </div>
+
+
+                <p class="small-note">
+                    美容室の導入・利用に費用はかかりません。
+                </p>
+
+
+                <a href="#contact" class="btn btn-dark">
+                    美容室として導入する
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FOR PARTNER
+        ================================================== -->
+
+        <section class="audience-section partner-section" id="partner">
+
+            <div class="audience-content">
+
+                <p class="section-eyebrow">
+                    FOR PARTNER
+                </p>
+
+                <h2>
+                    美容室を、<br>
+                    新しい集客チャネルに。
+                </h2>
+
+                <p class="audience-lead">
+                    TUNAGUYAでは、美容室を通じて
+                    新しいお客様との接点をつくる
+                    地域の企業・専門業者様を募集しています。
+                </p>
+
+
+                <div class="partner-features">
+
+                    <div>
+                        <span>掲載料</span>
+                        <strong>¥0</strong>
+                    </div>
+
+                    <div>
+                        <span>固定費</span>
+                        <strong>¥0</strong>
+                    </div>
+
+                    <div>
+                        <span>料金体系</span>
+                        <strong>成果報酬型</strong>
+                    </div>
+
+                </div>
+
+
+                <a href="#contact" class="btn btn-dark">
+                    提携企業になる
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+
+            <div class="audience-image">
+
+                <img
+                    src="images/hero.jpg.png"
+                    alt="暮らしを支える専門業者">
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             APP / CONEYAN
+        ================================================== -->
+
+        <section class="app-section section">
+
+            <div class="container">
+
+                <div class="app-grid">
+
+                    <div class="app-copy">
+
+                        <p class="section-eyebrow">
+                            TUNAGUYA PLATFORM
+                        </p>
+
+                        <h2 class="section-title">
+                            紹介を、<br>
+                            もっとシンプルに。
+                        </h2>
+
+                        <p class="lead">
+                            TUNAGUYAでは、
+                            美容室スタッフが専用のシステムを通じて
+                            お客様と専門業者をつなぎます。
+                        </p>
+
+                        <p>
+                            カテゴリーを選び、
+                            紹介先を選択。
+                            必要な情報を入力するだけ。
+                        </p>
+
+                        <div class="app-name">
+                            <span>POWERED BY</span>
+                            <strong>Coneyan</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="app-flow">
+
+                        <div class="app-step">
+                            <span>01</span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <strong>サービスを探す</strong>
+                        </div>
+
+                        <div class="app-arrow">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="app-step">
+                            <span>02</span>
+                            <i class="fa-solid fa-user-check"></i>
+                            <strong>紹介先を選ぶ</strong>
+                        </div>
+
+                        <div class="app-arrow">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+
+                        <div class="app-step">
+                            <span>03</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <strong>紹介する</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             MESSAGE
+        ================================================== -->
+
+        <section class="message-section">
+
+            <div class="message-overlay"></div>
+
+            <div class="message-content">
+
+                <p class="section-eyebrow">
+                    OUR MESSAGE
+                </p>
+
+                <h2>
+                    人と人がつながれば、<br>
+                    暮らしはもっと便利になる。
+                </h2>
+
+                <p>
+                    私たちは、地域にある「信頼」を<br>
+                    新しい価値へ変えていきます。
+                </p>
+
+                <div class="message-logo">
+                    TUNAGUYA
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CONTACT
+        ================================================== -->
+
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="section-header center">
+
+                    <p class="section-eyebrow">
+                        CONTACT
+                    </p>
+
+                    <h2 class="section-title">
+                        まずは、お気軽に。
+                    </h2>
+
+                    <p class="section-lead">
+                        TUNAGUYAへのご相談・サービス導入・
+                        提携についてのお問い合わせはこちらから。
+                    </p>
+
+                </div>
+
+
+                <div class="contact-grid">
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdT-fpFnk7RTql2mKQROUCeeWWMnV8B78nC57apgzr80JFv1Q/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card">
+
+                        <span>
+                            FOR SALON
+                        </span>
+
+                        <h3>
+                            美容室として導入する
+                        </h3>
+
+                        <p>
+                            導入について相談する
+                        </p>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdT-fpFnk7RTql2mKQROUCeeWWMnV8B78nC57apgzr80JFv1Q/viewform"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card">
+
+                        <span>
+                            FOR PARTNER
+                        </span>
+
+                        <h3>
+                            提携企業になる
+                        </h3>
+
+                        <p>
+                            提携について相談する
+                        </p>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
     <footer class="footer">
+
         <div class="container">
-            <h2 class="logo" style="color: #fff; margin-bottom: 1rem;">TUNAGUYA</h2>
-            <p>&copy; 2026 TUNAGUYA Inc. All Rights Reserved.</p>
+
+            <div class="footer-top">
+
+                <div>
+
+                    <div class="footer-logo">
+                        TUNAGUYA
+                    </div>
+
+                    <p>
+                        人と暮らしを、信頼でつなぐ。
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <div>
+                        <a href="#about">ABOUT</a>
+                        <a href="#service">SERVICE</a>
+                        <a href="#salon">FOR SALON</a>
+                    </div>
+
+                    <div>
+                        <a href="#partner">FOR PARTNER</a>
+                        <a href="#contact">CONTACT</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 TUNAGUYA Inc. All Rights Reserved.
+                </p>
+
+                <p>
+                    HYOGO, JAPAN
+                </p>
+
+            </div>
+
         </div>
+
     </footer>
 
+
     <!-- JavaScript -->
+
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
