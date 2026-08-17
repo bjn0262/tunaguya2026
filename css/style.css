@@ -170,7 +170,9 @@ ul {
     max-width: 720px;
     margin: 28px auto 0;
     color: var(--color-text-light);
-    font-size: 0.95rem;
+
+    /* PCで少し大きく */
+    font-size: 1rem;
     line-height: 2;
 }
 
@@ -356,9 +358,12 @@ ul {
 .desktop-nav > a {
     position: relative;
     color: var(--color-primary);
-    font-size: 0.7rem;
+
+    /* PCの右上メニューを少し大きく */
+    font-size: 0.78rem;
+
     font-weight: 600;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.10em;
 }
 
 .desktop-nav > a:not(.nav-contact)::after {
@@ -439,14 +444,6 @@ ul {
 
 /* ==========================================================================
    HERO
-   7枚の画像を使用
-   01_salon.jpg
-   02_stylist_customer.jpg
-   03_family_lifestyle.jpg
-   04_house.jpg
-   05_for_salon.jpg
-   06_for_partner.jpg
-   07_connection.jpg
    ========================================================================== */
 
 .hero {
@@ -471,17 +468,13 @@ ul {
 .hero-track {
     display: flex;
 
-    /* ★7枚なので700% */
     width: 700%;
-
     height: 100%;
 
-    /* 7枚を約35秒でスライド */
     animation: heroSlide 35s infinite;
 }
 
 .hero-slide {
-    /* ★7枚なので1枚あたり1/7 */
     width: calc(100% / 7);
 
     height: 100%;
@@ -505,49 +498,41 @@ ul {
 
 @keyframes heroSlide {
 
-    /* 01 */
     0%,
     10% {
         transform: translateX(0);
     }
 
-    /* 02 */
     14.28%,
     24.28% {
         transform: translateX(-14.2857%);
     }
 
-    /* 03 */
     28.57%,
     38.57% {
         transform: translateX(-28.5714%);
     }
 
-    /* 04 */
     42.85%,
     52.85% {
         transform: translateX(-42.8571%);
     }
 
-    /* 05 */
     57.14%,
     67.14% {
         transform: translateX(-57.1428%);
     }
 
-    /* 06 */
     71.42%,
     81.42% {
         transform: translateX(-71.4285%);
     }
 
-    /* 07 */
     85.71%,
     95.71% {
         transform: translateX(-85.7142%);
     }
 
-    /* 最後 */
     100% {
         transform: translateX(0);
     }
@@ -617,7 +602,8 @@ ul {
 
     color: rgba(255, 255, 255, 0.88);
 
-    font-size: 1rem;
+    /* PCで少し大きく */
+    font-size: 1.05rem;
     line-height: 2;
 }
 
@@ -733,6 +719,10 @@ ul {
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.45;
+
+    /* 日本語の途中で不自然に分割されにくくする */
+    word-break: keep-all;
+    line-break: strict;
 }
 
 .intro-text {
@@ -742,7 +732,8 @@ ul {
 
     color: var(--color-text-light);
 
-    font-size: 1rem;
+    /* PCで少し大きく */
+    font-size: 1.05rem;
     line-height: 2.2;
 }
 
@@ -807,6 +798,9 @@ ul {
     margin-bottom: 28px;
 
     color: var(--color-text-light);
+
+    /* PCで少し大きく */
+    font-size: 1rem;
     line-height: 2.1;
 }
 
@@ -815,7 +809,7 @@ ul {
 
     color: var(--color-primary);
 
-    font-size: 1.15rem;
+    font-size: 1.18rem;
     font-weight: 500;
 }
 
@@ -896,14 +890,16 @@ ul {
 
     color: var(--color-primary);
 
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     font-weight: 700;
     letter-spacing: 0.12em;
 }
 
 .connection-item > p:last-child {
     color: var(--color-text-light);
-    font-size: 0.78rem;
+
+    /* PCで少し大きく */
+    font-size: 0.85rem;
     line-height: 1.8;
 }
 
@@ -955,7 +951,7 @@ ul {
 
     color: rgba(255, 255, 255, 0.9);
 
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .network-en {
@@ -981,7 +977,7 @@ ul {
     color: rgba(255, 255, 255, 0.4);
 
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
 }
 
 
@@ -1053,7 +1049,9 @@ ul {
     max-width: 450px;
 
     color: var(--color-text-light);
-    font-size: 0.88rem;
+
+    /* PCで少し大きく */
+    font-size: 0.92rem;
     line-height: 2;
 }
 
@@ -1127,14 +1125,15 @@ ul {
 
     color: var(--color-primary);
 
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 600;
 }
 
 .service-card p {
     color: var(--color-text-light);
 
-    font-size: 0.82rem;
+    /* PCで少し大きく */
+    font-size: 0.88rem;
     line-height: 2;
 }
 
@@ -1199,7 +1198,8 @@ ul {
 
     color: var(--color-text-light);
 
-    font-size: 0.9rem;
+    /* PCで少し大きく */
+    font-size: 0.95rem;
     line-height: 2.1;
 }
 
@@ -1208,7 +1208,7 @@ ul {
 
     color: var(--color-primary);
 
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .audience-content strong {
@@ -1243,7 +1243,7 @@ ul {
 
     color: var(--color-text-light);
 
-    font-size: 0.7rem;
+    font-size: 0.72rem;
 }
 
 .price-box strong {
@@ -1260,7 +1260,7 @@ ul {
     margin-bottom: 25px !important;
 
     color: var(--color-text-light) !important;
-    font-size: 0.68rem !important;
+    font-size: 0.7rem !important;
 }
 
 .partner-features {
@@ -1320,13 +1320,14 @@ ul {
 
     color: var(--color-text-light);
 
-    font-size: 0.9rem;
+    /* PCで少し大きく */
+    font-size: 0.95rem;
     line-height: 2.1;
 }
 
 .app-copy .lead {
     color: var(--color-primary);
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .app-name {
@@ -1387,7 +1388,7 @@ ul {
 
 .app-step strong {
     color: var(--color-primary);
-    font-size: 0.85rem;
+    font-size: 0.88rem;
 }
 
 .app-arrow {
@@ -1454,7 +1455,9 @@ ul {
 
 .message-content > p:not(.section-eyebrow) {
     color: rgba(255, 255, 255, 0.75);
-    font-size: 0.9rem;
+
+    /* PCで少し大きく */
+    font-size: 0.95rem;
     line-height: 2;
 }
 
@@ -1530,7 +1533,9 @@ ul {
 
 .contact-card p {
     color: var(--color-text-light);
-    font-size: 0.75rem;
+
+    /* PCで少し大きく */
+    font-size: 0.82rem;
 }
 
 .contact-card:hover h3 {
@@ -1649,7 +1654,7 @@ ul {
     }
 
     .desktop-nav > a {
-        font-size: 0.62rem;
+        font-size: 0.68rem;
     }
 
     .connection-flow {
@@ -1706,10 +1711,17 @@ ul {
     .section-title {
         font-size: 1.85rem;
         padding-bottom: 20px;
+
+        /* 日本語の不自然な分割を抑える */
+        word-break: keep-all;
+        line-break: strict;
     }
 
     .section-lead {
-        font-size: 0.82rem;
+        font-size: 0.88rem;
+        line-height: 2;
+        word-break: keep-all;
+        line-break: strict;
     }
 
 
@@ -1767,7 +1779,7 @@ ul {
 
         color: var(--color-primary);
 
-        font-size: 0.72rem;
+        font-size: 0.75rem;
         font-weight: 600;
         letter-spacing: 0.12em;
     }
@@ -1808,10 +1820,17 @@ ul {
     .hero-content h1 {
         font-size: clamp(2.3rem, 11vw, 3.5rem);
         line-height: 1.45;
+
+        /* 日本語の途中で変に切らない */
+        word-break: keep-all;
+        line-break: strict;
     }
 
     .hero-description {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
+        line-height: 2;
+        word-break: keep-all;
+        line-break: strict;
     }
 
     .hero-buttons {
@@ -1840,14 +1859,38 @@ ul {
     .large-heading {
         font-size: 2.2rem;
         margin-bottom: 40px;
+
+        /* ここが今回の重要ポイント */
+        letter-spacing: 0;
+        line-height: 1.5;
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
+
+        /*
+         * 日本語の途中で
+         * 「どこに頼めばい」
+         * 「い？」
+         * のように分割されるのを防ぐ
+         */
+        text-wrap: balance;
     }
 
     .intro-text {
-        font-size: 0.88rem;
+        font-size: 0.92rem;
+        line-height: 2.15;
+
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
+    }
+
+    .intro-text p {
+        margin-bottom: 14px;
     }
 
     .intro-emphasis strong {
-        font-size: 1rem;
+        font-size: 1.02rem;
     }
 
     .intro-conclusion {
@@ -1860,6 +1903,15 @@ ul {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 35px;
+    }
+
+    .about-copy p {
+        font-size: 0.92rem;
+        line-height: 2.1;
+
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
     }
 
     .about-copy .lead {
@@ -1899,7 +1951,8 @@ ul {
     }
 
     .connection-item > p:last-child {
-        font-size: 0.68rem;
+        font-size: 0.72rem;
+        line-height: 1.8;
     }
 
 
@@ -1914,7 +1967,7 @@ ul {
     }
 
     .network-label {
-        font-size: 0.72rem;
+        font-size: 0.75rem;
     }
 
     .network-stat-divider {
@@ -1931,6 +1984,14 @@ ul {
     .feature-card {
         min-height: 260px;
         padding: 30px;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+        line-height: 2;
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
     }
 
 
@@ -1956,6 +2017,15 @@ ul {
         min-height: 250px;
 
         scroll-snap-align: start;
+    }
+
+    .service-card p {
+        font-size: 0.84rem;
+        line-height: 2;
+
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
     }
 
 
@@ -1992,10 +2062,18 @@ ul {
 
     .audience-content h2 {
         font-size: 2rem;
+
+        word-break: keep-all;
+        line-break: strict;
     }
 
     .audience-content > p {
-        font-size: 0.82rem;
+        font-size: 0.88rem;
+        line-height: 2.1;
+
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
     }
 
     .price-box strong {
@@ -2018,6 +2096,15 @@ ul {
         text-align: left;
     }
 
+    .app-copy > p {
+        font-size: 0.9rem;
+        line-height: 2.1;
+
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
+    }
+
     .app-flow {
         padding: 20px;
     }
@@ -2031,10 +2118,18 @@ ul {
 
     .message-content h2 {
         font-size: 1.8rem;
+
+        word-break: keep-all;
+        line-break: strict;
     }
 
     .message-content > p:not(.section-eyebrow) {
-        font-size: 0.78rem;
+        font-size: 0.82rem;
+        line-height: 2;
+
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
     }
 
 
@@ -2047,6 +2142,10 @@ ul {
     .contact-card {
         min-height: 200px;
         padding: 30px;
+    }
+
+    .contact-card p {
+        font-size: 0.8rem;
     }
 
 
@@ -2083,7 +2182,7 @@ ul {
     }
 
     .hero-description {
-        font-size: 0.78rem;
+        font-size: 0.84rem;
     }
 
     .opening-logo {
@@ -2135,5 +2234,24 @@ ul {
 
     .app-step strong {
         font-size: 0.75rem;
+    }
+
+    /*
+     * 小さいスマホでも見出しが
+     * 「どこに頼めばい」
+     * のように分割されにくいように調整
+     */
+    .large-heading {
+        font-size: 2rem;
+        letter-spacing: 0;
+        line-height: 1.5;
+        word-break: keep-all;
+        overflow-wrap: normal;
+        line-break: strict;
+        text-wrap: balance;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
     }
 }
